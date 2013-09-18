@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+
+     <EditText
+         android:id="@+id/ins_un"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/tv_un"
+         android:layout_centerHorizontal="true"
+         android:ems="10"
+         android:inputType="text" >
+
+         <requestFocus />
+     </EditText>
+
+     <TextView
+         android:id="@+id/tv_pw"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/ins_un"
+         android:gravity="center"
+         android:text="Password"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/tv_un"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:layout_marginTop="35dp"
+         android:gravity="center"
+         android:text="Username"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textStyle="bold" />
+
+     <EditText
+         android:id="@+id/ins_pw"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/ins_un"
+         android:layout_below="@+id/tv_pw"
+         android:ems="10"
+         android:inputType="textPassword" />
+
+     <Button
+         android:id="@+id/btn_login"
+         android:layout_width="134dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/ins_pw"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="18dp"
+         android:text="Sign In"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/tv_error"
+         android:layout_width="fill_parent"
+         android:layout_height="40dip"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/btn_login"
+         android:layout_marginTop="16dp"
+         android:gravity="center"
+         android:textColor="#AA0000"
+         android:textSize="7pt" />
+
+     <ProgressBar
+         android:id="@+id/pBar"
+         style="?android:attr/progressBarStyleLarge"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/btn_login"
+          android:visibility="gone" />
+
+</RelativeLayout>

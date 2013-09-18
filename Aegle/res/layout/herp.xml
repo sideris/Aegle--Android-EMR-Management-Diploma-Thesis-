@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+    
+<TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasd"
+        android:gravity="center"
+        android:layout_marginBottom="10px"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0078ed" />
+
+    <TextView
+        android:id="@+id/current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+
+    <TextView
+        android:id="@+id/itemcurrent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasd" 
+        android:textColor="#0078ed"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+
+    <TextView
+        android:id="@+id/itemYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasd"
+        android:textColor="#0078ed" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Value"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+
+    <TextView
+        android:id="@+id/itemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:textColor="#0078ed"/>
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comments"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+
+    <TextView
+        android:id="@+id/itemComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" 
+        android:textColor="#0078ed"/>
+</LinearLayout>

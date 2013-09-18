@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:title="Sync"
+        android:id="@+id/item_Synchronise"
+        android:icon="@drawable/refresh"
+        android:showAsAction="always"  /> 
+    <item
+        android:title="Settings"
+        android:id="@+id/item_settings"
+        android:icon="@drawable/settings"
+        android:showAsAction="always"  />
+    <item 
+        android:title="NFC"
+        android:id="@+id/NFC"
+        android:showAsAction="never" />    
+    <item 
+		android:title="Logout"
+        android:id="@+id/logout"
+        android:showAsAction="never"/>
+
+</menu>

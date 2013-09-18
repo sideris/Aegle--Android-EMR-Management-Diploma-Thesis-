@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back" >
+
+    <TextView
+        android:id="@+id/SettingsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Settings"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textColor="#0054a6"/>
+
+    <TextView
+        android:id="@+id/set_fname_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/SettingsTitle"
+        android:gravity="center"
+        android:text="First Name"
+        android:textColor="#0054a6" />
+
+    <EditText
+        android:id="@+id/set_uname"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set_lname"
+        android:layout_below="@+id/set_fname_title"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#aab" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/set_lname"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set_pwd"
+        android:layout_below="@+id/set_lname_title"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="#aab" />
+
+    <EditText
+        android:id="@+id/set_pwd"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_password_title"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#aab" />
+
+    <EditText
+        android:id="@+id/set_email"
+        android:layout_width="192dp"
+        android:inputType="textEmailAddress"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/set_pwd"
+        android:layout_below="@+id/set_email_title"
+        android:ems="10"
+        android:textColor="#aab" />
+
+    <TextView
+        android:id="@+id/set_lname_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/set_uname"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Last Name"
+        android:textColor="#0054a6" />
+
+    <TextView
+        android:id="@+id/set_password_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/set_lname"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Password"
+        android:textColor="#0054a6" />
+
+    <TextView
+        android:id="@+id/set_email_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/set_pwd"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="e-mail"
+        android:textColor="#0054a6" />
+
+    <Button
+        android:id="@+id/settings_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/set_email"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+</RelativeLayout>

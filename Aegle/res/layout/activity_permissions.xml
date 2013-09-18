@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/permDocTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Granted permissions"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:textColor="#0078ed" />
+    
+    <ListView
+        android:id="@+id/perm_docs_list"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_weight="0.91" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/add_perms"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Add permissions" />
+
+</LinearLayout>

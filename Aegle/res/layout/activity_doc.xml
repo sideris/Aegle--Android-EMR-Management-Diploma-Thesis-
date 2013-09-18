@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/back">
+
+    <TextView
+        android:id="@+id/doc_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asas"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:gravity="center"
+        android:textColor="#0078ed"
+        />
+
+    <TextView
+        android:id="@+id/doc_email2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#0078ed" />
+
+    <TextView
+        android:id="@+id/Title_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Field"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+     <TextView
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasd" 
+        android:textColor="#0078ed"/>
+     
+       <TextView
+        android:id="@+id/Title_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Works at"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+     <TextView
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasd" 
+        android:textColor="#0078ed"/>
+     
+       <TextView
+        android:id="@+id/Title_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:textSize="20dp"
+        android:textStyle="bold" 
+        android:textColor="#0078ed"/>
+     <TextView
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asdasd" 
+        android:textColor="#0078ed"/>
+     
+
+</LinearLayout>

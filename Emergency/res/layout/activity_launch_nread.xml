@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaunchNRead" >
+
+    <TextView
+        android:id="@+id/user_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="25sp"
+        android:textStyle="bold" 
+        android:text="@string/hello_world" />
+
+    <Button
+        android:id="@+id/us_cond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/user_info"
+        android:layout_marginTop="36dp"
+        android:text="Conditions" />
+
+    <Button
+        android:id="@+id/us_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/us_cond"
+        android:layout_marginTop="42dp"
+        android:text="Medication" />
+
+    <Button
+        android:id="@+id/us_al"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/us_cond"
+        android:layout_below="@+id/us_med"
+        android:layout_marginTop="44dp"
+        android:text="Allergies" />
+
+</RelativeLayout>

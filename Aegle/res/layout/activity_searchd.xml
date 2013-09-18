@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="My Health Specialists"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0078ed" />
+
+    <TextView
+        android:id="@+id/_dont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="Search by Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0078ed"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/doc_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#aab" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/doc_first_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="First Name"
+        android:textColor="#0078ed" />
+
+    <EditText
+        android:id="@+id/doc_last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#aab" />
+
+    <TextView
+        android:id="@+id/doc_last_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Last Name"
+        android:textColor="#0078ed" />
+
+    <Button
+        android:id="@+id/sea_name"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Search!"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/_not2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Search by Id"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#0078ed"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/DId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="#aab" />
+
+    <TextView
+        android:id="@+id/DId_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Doctor&apos;s Aeglea ID"
+        android:textColor="#0078ed" />
+
+    <Button
+        android:id="@+id/sea_id"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Search!"
+        android:textColor="#fff" />
+
+</LinearLayout>

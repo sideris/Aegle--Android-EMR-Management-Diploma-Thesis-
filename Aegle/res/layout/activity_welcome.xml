@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:alpha="20"
+        android:background="#474747" >
+
+        <Button
+            android:id="@+id/HProfessionalsButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="19dp"
+            android:drawableLeft="@drawable/doctor"
+            android:text="Doctors"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/PermissionsButton"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/HProfessionalsButton"
+            android:drawableLeft="@drawable/perms"
+            android:text="Permissions"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:textSize="22sp"
+        android:textColor="#0078ed" />
+
+    <ProgressBar
+        android:id="@+id/Main_PB"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:contentDescription="Herp"
+        android:id="@+id/albut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/allergies"
+        android:text="Allergies"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/testbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/albut"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/tests"
+        android:text="Tests"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/condbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/albut"
+        android:src="@drawable/conditions"
+        android:text="Medical Conditions"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/procbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/condbut"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/procedure"
+        android:text="Procedures"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/medbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/condbut"
+        android:src="@drawable/medications"
+        android:text="Medication"
+        android:textColor="#fff" />
+
+    <ImageButton
+        android:id="@+id/vacbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/albut"
+        android:src="@drawable/vaccinations"
+        android:text="Vaccinations"
+        android:textColor="#fff" />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="My doctors"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#0078ed" />
+
+    <ListView
+        android:id="@+id/Doctors_list"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_weight="0.90" >
+    </ListView>
+
+    <Button
+        android:id="@+id/Se_doc_but"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:gravity="center"
+        android:text="Search More"
+        android:textColor="#fff" />
+
+</LinearLayout>
