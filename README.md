@@ -1,4 +1,4 @@
-Aegle. EMR Management in Android (Diploma Thesis)
+Aegle, EMR Management in Android (Diploma Thesis)
 ================================================
 
 Diploma Thesis. An EMR management Android app(complementary to the "Aegle" website). 
@@ -10,8 +10,10 @@ There is also a complementary application using only NFC. This is intended for e
 The Aegle folder has the necessary files to compile the main Aegle  App.
 The Emergency folder has the necessary files to compile complementary App.
 
-Dependencies:
-    Android SDK
-    Eclipse
+Dependencies
+============
+   	
+   	Android SDK
+   	Eclipse
     Aegle website installed(currently at 83.212.108.109/aeglea)
     Android 4.0 to 4.1
