@@ -8,6 +8,11 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.main.Init;
+import aegle.web.CustomHttpTask;
+import aegle.web.Server;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
@@ -33,11 +38,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.CustomHttpTask;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Server;
-import com.PGSideris.aegle.Init;
 import com.PGSideris.aegle.R;
 
 public class NFC_R extends Activity{

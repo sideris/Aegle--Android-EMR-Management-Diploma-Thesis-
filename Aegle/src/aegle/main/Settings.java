@@ -1,4 +1,4 @@
-package com.PGSideris.aegle;
+package aegle.main;
 
 import java.util.ArrayList;
 import java.util.concurrent.ExecutionException;
@@ -8,6 +8,10 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.web.CustomHttpTask;
+import aegle.web.Server;
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
@@ -27,12 +31,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.PGSideris.HStaff.Doctors;
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.CustomHttpTask;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Server;
 import com.PGSideris.NFC.NFCW;
 import com.PGSideris.Permz.Permissions;
+import com.PGSideris.aegle.R;
 
 public class Settings extends Activity{
 	protected SQLiteDatabase myDB=null;

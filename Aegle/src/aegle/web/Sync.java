@@ -1,4 +1,4 @@
-package com.PGSideris.Handlers;
+package aegle.web;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -8,6 +8,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
 import android.content.Context;
 import android.database.Cursor;
 import android.util.Log;

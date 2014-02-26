@@ -8,6 +8,13 @@ import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONObject;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.main.Settings;
+import aegle.main.Welcome;
+import aegle.web.CustomHttpTask;
+import aegle.web.Server;
+import aegle.web.Sync;
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
 import android.app.Activity;
@@ -35,15 +42,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.PGSideris.HStaff.Doctors;
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.CustomHttpTask;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Server;
-import com.PGSideris.Handlers.Sync;
 import com.PGSideris.NFC.NFCW;
 import com.PGSideris.aegle.R;
-import com.PGSideris.aegle.Settings;
-import com.PGSideris.aegle.Welcome;
 
 public class Permissions extends Activity{
 	

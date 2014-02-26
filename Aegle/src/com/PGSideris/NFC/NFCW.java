@@ -9,6 +9,8 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import aegle.web.CustomHttpTask;
+import aegle.web.Server;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.PendingIntent;
@@ -29,8 +31,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.PGSideris.Handlers.CustomHttpTask;
-import com.PGSideris.Handlers.Server;
 import com.PGSideris.aegle.R;
 
 public class NFCW  extends Activity{

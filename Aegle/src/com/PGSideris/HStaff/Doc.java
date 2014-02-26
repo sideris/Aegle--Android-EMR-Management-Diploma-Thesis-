@@ -1,13 +1,13 @@
 package com.PGSideris.HStaff;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
 import android.app.Activity;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.Database;
 import com.PGSideris.aegle.R;
 
 public class Doc extends Activity{

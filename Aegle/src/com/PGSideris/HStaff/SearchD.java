@@ -9,6 +9,10 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.web.CustomHttpTask;
+import aegle.web.Server;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,10 +21,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.CustomHttpTask;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Server;
 import com.PGSideris.aegle.R;
 
 public class SearchD extends Activity{

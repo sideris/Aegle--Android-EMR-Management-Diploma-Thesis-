@@ -9,6 +9,11 @@ import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.web.CustomHttpTask;
+import aegle.web.Server;
+import aegle.web.Sync;
 import android.app.Activity;
 import android.content.Context;
 import android.database.Cursor;
@@ -33,11 +38,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.CustomHttpTask;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Server;
-import com.PGSideris.Handlers.Sync;
 import com.PGSideris.aegle.R;
 
 

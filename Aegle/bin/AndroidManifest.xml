@@ -12,14 +12,14 @@
     <application android:icon="@drawable/app_log"  android:background="@drawable/back" android:label="@string/app_name" 
         android:allowBackup="false" android:screenOrientation="portrait" >
       
-		<activity android:name=".Init" android:label="@string/app_name" android:screenOrientation="portrait">
+		<activity android:name="aegle.main.Init" android:label="@string/app_name" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name=".Welcome"></activity>
-		<activity android:name=".Settings"></activity>
+		<activity android:name="aegle.main.Welcome"></activity>
+		<activity android:name="aegle.main.Settings"></activity>
         <activity android:name="com.PGSideris.HRecs.Record"></activity>
         <activity android:name="com.PGSideris.HRecs.Item"></activity>
         <activity android:name="com.PGSideris.HStaff.Doctors"></activity>

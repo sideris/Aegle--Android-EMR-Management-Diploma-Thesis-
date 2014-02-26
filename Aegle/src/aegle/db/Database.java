@@ -1,4 +1,4 @@
-package com.PGSideris.Handlers;
+package aegle.db;
 
 import android.content.ContentValues;
 import android.content.Context;

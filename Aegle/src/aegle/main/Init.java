@@ -1,11 +1,12 @@
-package com.PGSideris.aegle;
+package aegle.main;
 
 import java.util.Date;
 
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Sync;
+import com.PGSideris.aegle.R;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.web.Sync;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;

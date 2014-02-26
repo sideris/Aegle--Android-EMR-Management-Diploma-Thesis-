@@ -1,5 +1,8 @@
-package com.PGSideris.aegle;
+package aegle.main;
 
+import aegle.db.Cuery;
+import aegle.db.Database;
+import aegle.web.Sync;
 import android.app.Activity;
 import android.app.Service;
 import android.content.Context;
@@ -24,11 +27,9 @@ import android.widget.Toast;
 
 import com.PGSideris.HRecs.Record;
 import com.PGSideris.HStaff.Doctors;
-import com.PGSideris.Handlers.Cuery;
-import com.PGSideris.Handlers.Database;
-import com.PGSideris.Handlers.Sync;
 import com.PGSideris.NFC.NFCW;
 import com.PGSideris.Permz.Permissions;
+import com.PGSideris.aegle.R;
 
 public class Welcome extends Activity{
 	private Cursor cursor;
