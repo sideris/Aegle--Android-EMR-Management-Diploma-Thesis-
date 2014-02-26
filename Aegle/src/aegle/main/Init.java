@@ -13,6 +13,7 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.AlphaAnimation;
@@ -23,7 +24,7 @@ import android.widget.TextView;
 public class Init extends Activity {
 	private Cursor cursor = null;
 	EditText name, pwd;
-	TextView error;
+	TextView error, register;
 	Button ok_btn;
 	
 	@Override
@@ -77,6 +78,7 @@ public class Init extends Activity {
 		name = (EditText) findViewById(R.id.login_username);
 		pwd = (EditText) findViewById(R.id.login_password);
 		ok_btn = (Button) findViewById(R.id.angry_btn);
+		register = (TextView) findViewById(R.id.register_link);
         error = (TextView) findViewById(R.id.login_error);
 	}
 	
@@ -91,7 +93,7 @@ public class Init extends Activity {
     	Database db = new Database(getApplicationContext());
         if( result == 0 ){
        		sync.others();
-           	Intent log = new Intent(getApplicationContext(), Welcome.class);
+           	Intent log = new Intent(getApplicationContext(), Main.class);
             log.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(log);
             finish();
@@ -112,9 +114,11 @@ public class Init extends Activity {
     
     private void clicks(){
     	ok_btn.setOnClickListener(new View.OnClickListener() {
-        	public void onClick(View v) {
+        	
+    		public void onClick(View v) {
         		//new Sync obj from Handlers(Constructor 2)
-        		Sync sync = new Sync(getApplicationContext(), 
+        		Sync sync = new Sync(
+        				getBaseContext(), 
         				name.getText().toString(),
         				pwd.getText().toString() );
         		/**
@@ -132,7 +136,7 @@ public class Init extends Activity {
 	               	//draw data
 	               	sync.others();
 	               	//create new intent
-	               	Intent log = new Intent(getApplicationContext(), Welcome.class);
+	               	Intent log = new Intent(getApplicationContext(), Main.class);
 	                // Close all views before launching logged
 	                log.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	                startActivity(log);
@@ -147,6 +151,17 @@ public class Init extends Activity {
 	            }
         	}
         });
+    	
+    	register.setOnClickListener(new View.OnClickListener(){
+
+			@Override
+			public void onClick(View v) {
+	           	Intent reg = new Intent(getApplicationContext(), Register.class);
+	           	reg.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	            startActivity(reg);
+			}
+    		
+    	});
     }
 	
 	private void startAnimations(){

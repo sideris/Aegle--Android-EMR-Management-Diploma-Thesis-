@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-		<activity android:name="aegle.main.Welcome"></activity>
+       	<activity android:name="aegle.main.Register"  android:screenOrientation="portrait"></activity>
+		<activity android:name="aegle.main.Main"></activity>
 		<activity android:name="aegle.main.Settings"></activity>
         <activity android:name="com.PGSideris.HRecs.Record"></activity>
         <activity android:name="com.PGSideris.HRecs.Item"></activity>

@@ -31,7 +31,7 @@ import com.PGSideris.NFC.NFCW;
 import com.PGSideris.Permz.Permissions;
 import com.PGSideris.aegle.R;
 
-public class Welcome extends Activity{
+public class Main extends Activity{
 	private Cursor cursor;
 	private String uid;
 	protected SQLiteDatabase myDB=null;

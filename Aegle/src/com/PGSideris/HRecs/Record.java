@@ -10,7 +10,7 @@ import org.json.JSONObject;
 import aegle.db.Cuery;
 import aegle.db.Database;
 import aegle.main.Settings;
-import aegle.main.Welcome;
+import aegle.main.Main;
 import aegle.web.CustomHttpTask;
 import aegle.web.Server;
 import aegle.web.Sync;
@@ -144,7 +144,7 @@ public class Record extends Activity{
 	        case android.R.id.home:
 	            // This is called when the Home (Up) button is pressed
 	            // in the Action Bar.
-	            Intent parentActivityIntent = new Intent(this, Welcome.class);
+	            Intent parentActivityIntent = new Intent(this, Main.class);
 	            parentActivityIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
 	            startActivity(parentActivityIntent);
 	            finish();
@@ -185,7 +185,7 @@ public class Record extends Activity{
 				Database db = new Database(getApplicationContext());
 				db.logout();
 			    //finish the welcome activity
-				Intent intent = new Intent(getApplicationContext(), Welcome.class);
+				Intent intent = new Intent(getApplicationContext(), Main.class);
 			    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			    intent.putExtra("EXIT", "yes");
 			    startActivity(intent);
