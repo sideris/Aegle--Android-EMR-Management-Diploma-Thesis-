@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Aegle</string>
+
+    <string name="app_name">ap</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_basic_screen">ap</string>
+
+    <string-array name="drawer_items">
+        <item>ap</item>
+        <item>Settings</item>
+        <item>About &amp; FAQ</item>
+        <item>Donate</item>
+    </string-array>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_main_screen">MainScreen</string>
 </resources>

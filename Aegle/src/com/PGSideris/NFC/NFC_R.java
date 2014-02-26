@@ -37,16 +37,16 @@ import com.PGSideris.Handlers.Cuery;
 import com.PGSideris.Handlers.CustomHttpTask;
 import com.PGSideris.Handlers.Database;
 import com.PGSideris.Handlers.Server;
-import com.PGSideris.aegle.Login;
+import com.PGSideris.aegle.Init;
 import com.PGSideris.aegle.R;
 
 public class NFC_R extends Activity{
 
 	private boolean mWriteMode = false;
 	private static final String TAG = "NFC AEGLEA READ";
-	protected String dname, did = "",input,uid;
+	protected String dname, did = "", input, uid;
 	Server server = new Server();
-	int count=1;
+	int count = 1;
 	Cursor cursor = null,us=null;
 	NfcAdapter mNfcAdapter;
 	PendingIntent mNfcPendingIntent;
@@ -193,13 +193,13 @@ public class NFC_R extends Activity{
 	   Cuery q2 = new Cuery(getApplicationContext());
 	   us = q2.fetchOption("SELECT * FROM save");
 	   
-	   if(us.getCount()==0){
+	   if( us.getCount() == 0 ){
 		   new AlertDialog.Builder(this)
            	.setTitle("Something's wrong!")
            	.setMessage("No user. Try logging in and then swipe the Tag again")
             .setNegativeButton("Ok", new DialogInterface.OnClickListener(){
 	                public void onClick(DialogInterface dialog, int id){
-	    		 		Intent login = new Intent(getApplicationContext(), Login.class);
+	    		 		Intent login = new Intent(getApplicationContext(), Init.class);
 	    		 		startActivity(login);
 	                    finish();
 	                }
@@ -207,8 +207,7 @@ public class NFC_R extends Activity{
            	.show();
 	   }else{
 		   uid = us.getString(us.getColumnIndex("uid"));
-		
-		   if(cursor.getCount()==0){
+		   if( cursor.getCount() ==0 ){
 		        new AlertDialog.Builder(this)
 			        .setView(v)
 		            .setTitle("First time. Save new PIN")

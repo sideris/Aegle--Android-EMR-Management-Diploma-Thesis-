@@ -40,7 +40,6 @@ public class CustomHttpClient {
 	private static HttpContext context;
 	private static HttpParams params;
 	
-	
 	private static HttpClient getHttpClient() {
 		 if (httpClient == null) {
 			 //initialize and setup the HttpClient
@@ -93,8 +92,8 @@ public class CustomHttpClient {
 			 request.setEntity(formEntity);
 			 //getting response from remote server as an Entity, then converting it to JSONObject
 			 HttpResponse response = client.execute(request);
-			 he=response.getEntity();
-			 jo=new JSONObject(EntityUtils.toString(he));
+			 he = response.getEntity();
+			 jo = new JSONObject(EntityUtils.toString(he));
 			 return jo;
 		 } finally {
 			 if (in != null) {

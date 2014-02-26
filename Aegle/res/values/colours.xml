@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_purple">#AB77FF</color>
+    <color name="deep_purple">#133855</color>
+    <color name="black_1">#111</color>
+    <color name="black_3">#333</color>
+    <color name="counter_text_bg">#626262</color>
+    
+</resources>

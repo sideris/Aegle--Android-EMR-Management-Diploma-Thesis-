@@ -29,7 +29,8 @@ public class CustomHttpTask extends AsyncTask<Object,JSONObject,JSONObject> {
 	   
 	    @Override
 	    protected void onPostExecute(JSONObject result) {
-	    	//nothing we handle it later. The reason is that the Asynchronous part fails as we use a synchronous task in a higher implementation level.
+	    	//nothing we handle it later. The reason is that the Asynchronous part fails as we use 
+	    	//a synchronous task in a higher implementation level.
 	    }
 	    
 	    public JSONObject getval(){
