@@ -8,31 +8,32 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Register" >
-
+   
     <TextView
-        android:id="@+id/register_error"
+        android:id="@+id/reg_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
+        android:layout_alignLeft="@+id/register_error"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="29dp"
         android:gravity="center"
-        android:text=""
-        android:textSize="20sp"
-        android:textColor="#e57979" />
-
+        android:text="Register"
+        android:textColor="#444"
+        android:textSize="50sp"
+        android:textStyle="italic" />  
+        
     <EditText
-        android:id="@+id/register_fullname"
+        android:id="@+id/register_username"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_alignLeft="@+id/register_email"
-        android:layout_below="@+id/register_email"
-        android:layout_marginTop="28dp"
+        android:layout_below="@+id/reg_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
         android:background="@drawable/edit_fields_shape"
         android:ems="10"
         android:gravity="center"
-        android:hint="full name"
+        android:hint="username"
         android:inputType="textPersonName"
         android:padding="2dp"
         android:textColor="#333" />
@@ -50,7 +51,24 @@
         android:hint="email"
         android:inputType="textEmailAddress"
         android:padding="2dp"
+        android:textColor="#333" />    
+    
+    <EditText
+        android:id="@+id/register_fullname"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/register_email"
+        android:layout_below="@+id/register_email"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_fields_shape"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="full name"
+        android:inputType="textPersonName"
+        android:padding="2dp"
         android:textColor="#333" />
+
+
 
     <EditText
         android:id="@+id/register_pwd"
@@ -83,33 +101,19 @@
         android:textColor="#444"
         android:textSize="20sp" />
 
+
+
     <TextView
-        android:id="@+id/reg_title"
+        android:id="@+id/register_error"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/register_error"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="29dp"
+        android:layout_centerVertical="true"
         android:gravity="center"
-        android:text="Register"
-        android:textColor="#444"
-        android:textSize="50sp"
-        android:textStyle="italic" />
-
-    <EditText
-        android:id="@+id/register_username"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/reg_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/edit_fields_shape"
-        android:ems="10"
-        android:gravity="center"
-        android:hint="username"
-        android:inputType="textPersonName"
-        android:padding="2dp"
-        android:textColor="#333" />
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="#e57979" />
 
 </RelativeLayout>
